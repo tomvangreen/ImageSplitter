@@ -5,7 +5,7 @@ Image Splitter is a simple tool to split up an image into multiple tiles of the 
 
 Command Line:
 
-java -jar splitter.jar -i:<InputImage> -o:<OutputFolder> -w:<TileWidth> -h:<TileHeight> -s:<SkipEmptyFiles> -f:<OutputFileFormat> -x:<OutputNameIndices>
+java -jar splitter.jar -i:<<InputImage>> -o:<OutputFolder> -w:<TileWidth> -h:<TileHeight> -s:<SkipEmptyFiles> -f:<OutputFileFormat> -x:<OutputNameIndices>
 
 Parameter
 InputImage (-i): Input image (required)
