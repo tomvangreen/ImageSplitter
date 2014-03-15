@@ -67,11 +67,6 @@ public class TextureSplitter {
       return true;
    }
 
-   private void buildIndex() {
-      // TODO Auto-generated method stub
-
-   }
-
    private boolean canExport(BufferedImage outputImage, int tileWidth, int tileHeight) {
       if (!skipEmptyTiles) {
          return true;
