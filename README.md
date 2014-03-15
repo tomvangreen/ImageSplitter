@@ -5,7 +5,7 @@ Image Splitter is a simple tool to split up an image into multiple tiles of the 
 
 ##Command Line:
 
-`java -jar splitter.jar -i:<<InputImage>> -o:<OutputFolder> -w:<TileWidth> -h:<TileHeight> -s:<SkipEmptyFiles> -f:<OutputFileFormat> -x:<OutputNameIndices>
+`java -jar splitter.jar -i:<<InputImage>> -o:<OutputFolder> -w:<TileWidth> -h:<TileHeight> -s:<SkipEmptyFiles> -f:<OutputFileFormat> -x:<OutputNameIndices>`
 
 ###Parameter
 
@@ -17,7 +17,7 @@ Image Splitter is a simple tool to split up an image into multiple tiles of the 
 * OutputFileFormat (-f): The output format of the created files. You can define the wildcards {0} for the original file name (without extension), {1} for x position and {2} for y position in the sprite sheet.
 * OutputNameIndices (-x): A special file containing the position in the tileset and a name. When no name has been defined for a given index, the OutputFileFormat is used instead.
 
-`java -jar splitter.jar -i:spritesheet.png -o:tiles -w:32 -h:32 -f:{0}_l{2}_t{1} -s:1 -x:spritesheet.txt
+`java -jar splitter.jar -i:spritesheet.png -o:tiles -w:32 -h:32 -f:{0}_l{2}_t{1} -s:1 -x:spritesheet.txt`
 
  
 
