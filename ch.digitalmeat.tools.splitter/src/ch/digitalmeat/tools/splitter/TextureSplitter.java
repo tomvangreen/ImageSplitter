@@ -94,7 +94,8 @@ public class TextureSplitter {
 		message(String.format("Handling %d/%d: '%s'", x, y, fullOutputFileName));
 
 		File outputFile = new File(fullOutputFileName);
-		outputFile.getParentFile().mkdir();
+		File parentFile = outputFile.getParentFile();
+		parentFile.mkdirs();
 		try {
 			if (!ImageIO.write(outputImage, extension, outputFile)) {
 				message("ImageIO.write failed. No approrpiate writer found.");
